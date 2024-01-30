@@ -1,0 +1,365 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* BODY */
+
+body {
+  margin: 80 auto;
+}
+
+
+.portfolio {
+  font-size: 1.2rem;
+  font-weight: bold !important;
+  color: #5f412e;
+}
+.monNom,
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #86695c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2rem;
+  color: #5f412e;
+  font-family: 'Raleway', sans-serif;
+  margin: 10px !important;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  color: #5f412e;
+  font-family: 'Raleway', sans-serif;
+  margin: 10px !important;
+  text-transform: uppercase;
+}
+main h2:hover {
+  color: #666;
+}
+
+/* style pr le header */
+#header {
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  z-index: 997;
+  overflow: auto;
+}
+#header * {
+  transition: ease-in-out 0.3s;
+}
+#header .monNom {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #5f412e;
+  
+}
+
+#header span {
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(50px);
+  display: inline-block;
+}
+#header span.mariam {
+  opacity: 1;
+  transform: translateY(0px);
+  border: 1px solid red;
+}
+
+#header h1 .dev {
+  color: #5f412e;
+  font-weight: bold;
+  border-bottom: 2px solid #d8b8ab;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+#header h1 .dev:hover {
+  border-bottom: 2px solid #5f412e;
+  padding-bottom: 6px;
+}
+
+.navMenus {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #666;
+}
+
+main .sectionContact span {
+  transition: all 0.5s ease;
+}
+
+
+main .sectionContact .contact .info-box {
+  color: black;
+  padding: 20px;
+  width: 100%;
+  font-weight: bold;
+}
+
+main .sectionContact .contact .info-box:hover {
+  color: #666;
+}
+
+main .sectionContact .contact .info-box h3 {
+  color: #5f412e;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0 8px 5px;
+  border: 1px solid red;
+}
+
+h5 {
+  padding: 0;
+  line-height: 24px;
+  margin: 0 0 0 5px;
+}
+
+main .sectionContact .contact .info-box .social-links {
+  margin: 0px 0 0 5px;
+  display: flex;
+}
+
+main .sectionContact .contact .info-box .social-links a {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: black;
+  line-height: 1;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+main .sectionContact .contact .info-box .social-links a:nth-child(1) {
+  
+  margin-right: 60px;
+}
+
+main .sectionContact .contact .php-email-form {
+  margin: 4% auto !important;
+  padding: 0px;
+}
+
+main .sectionContact .contact .php-email-form input {
+  padding: 20px 15px;
+}
+
+main .sectionContact .contact .php-email-form textarea {
+  padding: 12px 15px;
+  resize: none;
+  margin-bottom: 100px !important;
+}
+
+main .sectionContact .contact .php-email-form .submit {
+  margin: 50px  20px 0 20px!important;
+  padding: 20px 100px !important;
+  cursor: pointer !important;
+  font-size: 2rem;
+  transition: 0.5s;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #5f412e, #666, #d8b8ab);
+  background-size: 200%;
+}
+
+main .sectionContact .contact .php-email-form .submit:hover {
+  background-position: right;
+}
+
+main button {
+  font-size: 350%;
+  background: transparent;
+  border: none;
+  color: #5f412e;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+/* STYLE POUR LE FOOTER */
+footer p {
+  font-size: 0.7rem;
+}
+
+/* DEBUT MEDIA QUERY Medium	md	≥768px*/
+@media screen and (max-width: 768px) {
+ 
+  /* style pr le header */
+  #header {
+    height: 55vh;
+  }
+  #header * {
+    transition: ease-in-out 0.3s;
+  }
+
+  #header h1 .dev {
+    display: block;
+    margin-top: 10px;
+    border-bottom: none;
+    
+  }
+  #header h1 .dev:hover {
+    border-bottom: none;
+    
+  }
+  
+  main .sectionContact .contact .info-box {
+    text-align: center;
+  }
+  
+  main .sectionContact .contact .info-box h3 {
+    margin: 0px;
+  }
+  
+  main .sectionContact .contact .info-box .social-links a { 
+    margin: auto ;
+  }
+  
+  main .sectionContact .contact .info-box .social-links a:nth-child(1) {
+    
+    margin-right: -100px;
+  }
+  
+  main .sectionContact .contact .php-email-form .submit {
+    margin: 0!important;
+    padding: 10px 50px !important;
+    font-size: 1.5rem;
+  }
+  
+  main button {
+    font-size: 250%;
+  }
+  
+}
+
+/* FIN MEDIA QUERY Medium	md	≥768px*/
+
+/* DEBU MEDIA QUERY Small	sm	≥576px*/
+@media screen and (max-width: 576px) {
+  /* style pr le header */
+  #header {
+    height: 55vh;
+  }
+  #header * {
+    transition: ease-in-out 0.3s;
+  }
+
+  #header h1 .dev {
+    display: block;
+    margin-top: 10px;
+    border-bottom: none;
+    
+  }
+  #header h1 .dev:hover {
+    border-bottom: none;
+    
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  main .sectionContact .contact .info-box {
+    text-align: center;
+  }
+  
+  main .sectionContact .contact .info-box h3 {
+    margin: 0px;
+  }
+  
+  main .sectionContact .contact .info-box .social-links a { 
+    margin: auto ;
+  }
+  
+  main .sectionContact .contact .info-box .social-links a:nth-child(1) {
+    
+    margin-right: -100px;
+  }
+  
+  main .sectionContact .contact .php-email-form .submit {
+    margin: 0!important;
+    padding: 10px 50px !important;
+    font-size: 1.5rem;
+  }
+  
+  main button {
+    font-size: 250%;
+  }
+  
+}
+
+/* FIN MEDIA QUERY Small	sm	≥576px */
+
+/* DEBUT MEDIA QUERY Extra small	None	<576px */
+@media screen and (min-width: 575px) {
+  
+  
+ 
+  /* style pr le header */
+  #header {
+    height: 55vh;
+  }
+
+  #header h1 .dev {
+   font-size: 1rem; 
+  }
+  #header h1 .dev:hover {
+    border-bottom: none;
+    
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  main .sectionContact .contact .info-box {
+    text-align: center;
+  }
+  
+  main .sectionContact .contact .info-box h3 {
+    margin: 0px;
+  }
+  
+  main .sectionContact .contact .info-box .social-links a { 
+    margin: auto ;
+  }
+  
+  main .sectionContact .contact .info-box .social-links a:nth-child(1) {
+    
+    margin-right: -100px;
+  }
+  
+  main .sectionContact .contact .php-email-form .submit {
+    margin: 0!important;
+    padding: 10px 50px !important;
+    font-size: 1.5rem;
+  }
+  
+  main button {
+    font-size: 250%;
+  }
+  
+}
+
+/* FIN MEDIA QUERY Extra small	None	<576px */
+
